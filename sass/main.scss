@@ -1,0 +1,29 @@
+@import "variables";
+@import "theme";
+
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    width: 100%;
+}
+
+body {
+    font-size: rem(16);
+    background-color: $backgroundColorSecondary;
+    color: setTextColor($backgroundColorPrimary);
+    height: 100vh;
+    width: 100%;
+    line-height: 1.5rem;
+}
+
+
+@import "header";
+@import "games";
+@import "game-info";
+@import "services";
+@import "accounts";

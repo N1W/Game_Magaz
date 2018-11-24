@@ -1,0 +1,46 @@
+.game-info {
+	height: rem(650);
+	padding: rem(60) rem(300);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: url(../images/wot.png) no-repeat;
+	background-size: 100%;
+	background-position: center;
+	border-bottom: rem(1) solid $menu-links-grey;
+	.breadcrumbs {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		li {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: rem(40);
+			width: rem(260);
+			margin-right: rem(10);
+			a {
+				font-size: rem(20);
+				@include font(Raleway, regular);
+				opacity: 0.5;
+			}
+		}
+		.odd {
+			background: $golden;
+			a {
+				color: $black;
+			}
+		}
+		.even {
+			background: $menu-links-grey;
+			a {
+				color: $white;
+			}
+		}
+	}
+	h1 {
+		font-size: rem(40);
+		color: $golden;
+		@include font(Raleway, regular);
+	}
+}

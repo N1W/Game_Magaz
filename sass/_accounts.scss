@@ -1,0 +1,73 @@
+.accounts {
+	padding: 0 rem(60);
+	padding-top: rem(40);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	.accounts__item {
+		width: rem(405);
+		height: rem(680);
+		padding: rem(145) rem(60) rem(60) rem(60);
+		margin: rem(20) 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+		background: $cyan-dark;
+	}
+	.accounts__premium {
+		width: rem(120);
+		height: rem(120);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		right: rem(60);
+		background: $gray-map;
+		h3 {
+			color: $golden;
+			@include font();
+		}
+	}
+	.accounts__info {
+		.accounts__title {
+			color: $menu-links-grey;
+			@include font(Roboto, bold);
+		}
+		.accounts__description {
+			margin: rem(17) 0 rem(33) 0;
+			font-size: rem(20);
+			color: $menu-links-grey;
+			@include font(Roboto, bold);
+		}
+		.options {
+			height: rem(84);
+			.options__item {
+				span {
+					font-size: rem(10);
+					@include font();
+				}
+			}
+		}	
+	}
+	.accounts__price {
+		height: rem(55);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		border-top: rem(1) solid $menu-links-grey;
+		h3 {
+			color: $menu-links-grey;
+			@include font(Roboto, bold);
+			&.more {
+				color: $golden;
+				cursor: pointer;
+			}
+		}
+	}
+
+}

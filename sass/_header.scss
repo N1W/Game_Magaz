@@ -1,0 +1,56 @@
+header {
+	height: rem(100);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 rem(30);
+	border-bottom: rem(1) solid $menu-links-grey;
+	background: url(../images/background_pattern.png) 100%;
+	.menu, .logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.menu__list {
+			width: rem(540);
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			.menu__item {
+				@include font(Raleway, regular);
+				font-size: rem(20);
+				color: $menu-links-grey;
+				@include easeOut();
+				&:hover {
+					color: $golden;
+				}
+			}
+		}
+	}
+	.account {
+		width: rem(385);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		@include font();
+		font-size: rem(20);
+		color: $menu-links-grey;
+		.account__cart {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			svg {
+				width: rem(50);
+				fill:none;
+				stroke: $golden;
+				stroke-width: 6;
+				stroke-miterlimit: 10;
+			}	
+		}
+		.fa-caret-down {
+			margin-left: rem(5); 
+			color: $golden;
+		}
+	}
+}

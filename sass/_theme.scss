@@ -1,0 +1,66 @@
+//Links
+a {
+    text-decoration: none;
+}
+
+//Buttons
+//Menu Button
+.menu-btn{
+    //position: relative;
+    //z-index: 3;
+    //top: 40px;
+    //right: 40px;
+    cursor: pointer;
+    @include easeOut;
+
+    .btn-line {
+        width: 40px;
+        height: 2px;
+        margin: 9px 0;
+        background: $textColorSecondary;
+        @include easeOut;
+    }
+
+    //Rotate Into X
+    &.close {
+        transform: rotate(180deg);
+
+        .btn-line {
+            //Line 1 -Rotate
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        //Line 2 - Hide
+        &:nth-child(2) {
+            opacity: 0;
+        }
+
+        //Line 2 - Rotate
+        &:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+    }
+  }
+}
+
+//Search Button
+.search-btn {
+    svg {
+        fill: $golden;
+        height: 40px;
+        width: auto;
+        @include easeOut;
+    }
+
+    &:hover {
+        svg {
+            fill: rgba($golden, .5);
+        }
+    }
+}
+
+//Fonts 
+h3 {
+    font-size: rem(20);
+}
