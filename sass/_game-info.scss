@@ -1,13 +1,22 @@
+.login-info {
+	background: $cyan-dark;
+	height: rem(290);
+}
+
 .game-info {
+	background: url(../images/wot.png) no-repeat;
 	height: rem(650);
+	border-bottom: rem(1) solid $menu-links-grey;
+}
+
+.game-info, 
+.login-info {
 	padding: rem(60) rem(300);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background: url(../images/wot.png) no-repeat;
 	background-size: 100%;
 	background-position: center;
-	border-bottom: rem(1) solid $menu-links-grey;
 	.breadcrumbs {
 		display: flex;
 		flex-direction: row;
@@ -44,3 +53,4 @@
 		@include font(Raleway, regular);
 	}
 }
+
