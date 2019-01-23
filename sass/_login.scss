@@ -5,14 +5,53 @@
 	justify-content: center;
 	align-items: center;
 	.auth_container {
-		padding-top: rem(40);
+		padding: rem(40) 0;
 		border-top: rem(1) solid $menu-links-grey;
 		width: rem(1235);
-		height: rem(290);
+		height: rem(330);
 		.auth {
 			width: 100%;
 			height: 100%;
-			background: black;
+			padding: rem(57) rem(85);
+			background: $cyan-darker;
+			@include font();
+			h1 {
+				font-size: rem(30);
+			}
+			.login-form {
+				margin-top: rem(27);
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				.forgot {
+					font-size: rem(15);
+				}
+			}
+			.email-wrapper, .password-wrapper {
+				position: relative;
+				width: rem(300);
+				height: rem(60);
+			}
+			.password {
+				span {
+					display: inline-block;
+					margin-top: rem(18);
+				}
+			}
+			.default-btn {
+				width: rem(140);
+				height: rem(60);
+			}
+			.registrate-link {
+				font-size: rem(25);
+			}
+			.registration-info {
+				display: inline-block;
+				margin-top: rem(8);
+				width: rem(206);
+				font-size: rem(15);
+				color: $menu-links-grey;
+			}
 		}
 	}
 }
